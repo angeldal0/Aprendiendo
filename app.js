@@ -2,6 +2,7 @@
 
 var form = document.getElementById("formAgregar");
 var lista = document.getElementById("items");
+var filtro = document.getElementById("filtro")
 
 //evento agregar item
 
@@ -10,6 +11,9 @@ form.addEventListener("submit", agregarItem);
 //evento eliminar item
 
 lista.addEventListener("click", eliminarItem);
+
+//evento para filrar items
+filtro.addEventListener("keyup", filtrarItems);
 
 //función agregar item
 
@@ -41,3 +45,19 @@ function eliminarItem(item){
         }
     }
 }
+
+//funcion para filtrar un item
+
+function filtrarItems(palabra){
+    var texto = palabra.target.value.toLowerCase();
+    var items = lista.getElementsByTagName("li");
+    Array.from(items).forEach(function(item){
+        var itemNombre = item.firstChild.textContent;
+        if(itemNombre.toLowerCase().indexOf(texto) != -1){
+            item.style.display = "block";
+        }else{
+            item.style.display = "none";
+        }
+    });
+}
+
