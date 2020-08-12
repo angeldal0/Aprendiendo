@@ -21,8 +21,7 @@ body {
 /*****************************************************************
 ********************** Lista de opciones *************************
 ******************************************************************/
-.listas {
-    display: block;
+.lista {
     float: right;
     max-width: 710px;
 }
@@ -31,7 +30,7 @@ body {
     display: none;
 }
 
-#listasEntrantes {
+#listaEntrantes {
     display: none;
 }
 
