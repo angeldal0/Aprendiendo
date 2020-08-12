@@ -2,7 +2,7 @@
 /*                     script de las listas                        */
 /*******************************************************************/
 
-var ultimaLista = "listaBebidas";
+var ultimaLista = "listaEntrantes";
 
 function mostrarLista(lista){
     switch (lista.innerHTML){
