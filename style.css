@@ -22,7 +22,7 @@ body {
 ********************** Lista de opciones *************************
 ******************************************************************/
 #listaOpciones {
-    max-width: 230px;
+    max-width: 270px;
     display: block;
     float: left;
 }
