@@ -22,13 +22,13 @@ body {
 ********************** Lista de opciones *************************
 ******************************************************************/
 #listaOpciones {
-    max-width: 300px;
+    max-width: 255px;
     display: block;
     float: left;
 }
 
 .botonDeOpcion {
-    width: 220px;
+    width: 235px;
     height: 200px;
-    font-size: 35px;
+    font-size: 33px;
 }
