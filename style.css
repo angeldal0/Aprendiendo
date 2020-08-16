@@ -19,8 +19,11 @@ body {
 
 #ultimaComanda {
     width: 700px;
-    border: 0;
     margin: 5px;
+    border-color: rgb(166, 241, 166);
+    border-style: double;
+    border-radius: 6px;
+    border-width: 4px;
     background-color: white;
     font-size: 50px;
     font-style: italic;
@@ -30,7 +33,7 @@ body {
     display: none;
     padding-left: 250px;
     max-width: 650px;
-    font-size: 25px;
+    font-size: 40px;
 
 }
 
@@ -38,12 +41,13 @@ body {
 /*****************************************************************
 ********************** Lista de opciones *************************
 ******************************************************************/
+
 .lista {
     float: right;
     max-width: 710px;
 }
 
-#listaEntrantes, #listaHamburguesas, #listaBebidas, #listaCafe, #listaLicores, #listaPostres {
+#listaEntrantes, #listaHamburguesas, #listaBebidas, #listaCafe, #listaLicores, #listaPostres, #listaVinos {
     display: none;
 }
 
@@ -57,4 +61,75 @@ body {
     width: 233px;
     height: 200px;
     font-size: 25px;
+    border-width: 2px;
+    border-color: black;
+}
+
+/*****************************************************************
+********************** Colores de Botones ************************
+******************************************************************/
+
+.red {
+    background-color: red;
+    color: white;
+}
+
+.blue {
+    background-color: blue;
+    color: white;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.purple {
+    background-color: purple;
+    color: white;
+}
+
+.lightblue {
+    background-color: lightblue;
+
+}
+
+.pink {
+    background-color: rgb(255, 59, 124);
+    color: white;
+}
+
+.green {
+    background-color: rgb(23, 231, 23);
+    color: white;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.brown {
+    background-color: brown;
+    color: white;
+}
+
+.darkred {
+    background-color: darkred;
+    color: white;
+}
+
+.darkblue {
+    background-color: rgb(20, 0, 68);
+    color: white;
+}
+
+.botonCafe {
+    background-color: rgb(3, 97, 97);
+    color: white;
+}
+
+.corregir {
+    border-style: dashed;
+    border-width: 10px;
+    border-color: red;
 }
