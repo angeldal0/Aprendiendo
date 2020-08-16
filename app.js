@@ -70,6 +70,7 @@ function añadirComanda(cosa){
     nuevaComanda.id = 'co' + comandas.length;
     ultimaComanda.innerHTML = nuevaComanda.innerHTML = cosa.innerHTML;
     listaComandas.appendChild(nuevaComanda);
+    mostrarBarraModificador();
 }
 
 function eliminarUltimaComanda(){
@@ -77,7 +78,31 @@ function eliminarUltimaComanda(){
     comandas.pop();
     if (comandas.length == 0){
         ultimaComanda.innerHTML = "No hay comanda";
+        ocultarBarraModificador();
     } else {
         ultimaComanda.innerHTML = comandas[comandas.length - 1];
     }
+}
+
+var barraModificador = document.getElementById("modificador");
+
+function ocultarBarraModificador(){
+    barraModificador.style.display = "none";
+}
+
+function mostrarBarraModificador(){
+    barraModificador.style.display = "block";
+}
+
+function renovarComanda(nuevaComanda){
+    eliminarUltimaComanda();
+    añadirComanda(nuevaComanda);
+    console.log("w");
+}
+
+function modificar(comentario){
+    var edit = document.createElement("p");
+    edit.innerHTML = ultimaComanda.innerHTML + '\n - ' + comentario.value;
+    console.log(edit.innerHTML);
+    renovarComanda(edit);
 }
