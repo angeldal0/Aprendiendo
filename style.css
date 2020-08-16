@@ -7,7 +7,7 @@ body {
 ********************** Cuadro de Comandas *************************
 ******************************************************************/
 
-#ultimaComanda {
+#header {
     background-color: rgb(253, 231, 239);
     text-align: center;
     margin: 0;
@@ -15,6 +15,23 @@ body {
 }
 #comanda {
     margin: 0;
+}
+
+#ultimaComanda {
+    width: 700px;
+    border: 0;
+    margin: 5px;
+    background-color: white;
+    font-size: 30px;
+    font-style: italic;
+}
+
+#comandas {
+    display: none;
+    padding-left: 250px;
+    max-width: 650px;
+    font-size: 25px;
+
 }
 
 
