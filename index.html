@@ -3,8 +3,8 @@
     <head>
         <link rel="stylesheet" href="style.css">
     </head>
-    <header id="ultimaComanda">
-        <h1 id="comanda">comanda</h1>
+    <header id="header">
+        <button id="ultimaComanda" onclick="mostrarComanda()">No hay comanda</button>
     </header>
     <body>
         <div id="listaOpciones">
@@ -14,59 +14,63 @@
             <button class="botonDeOpcion botonLista" onclick="mostrarLista(cafe)" id="cafe">Cafe</button></li>
             <button class="botonDeOpcion botonLista" onclick="mostrarLista(postres)" id="postres">Postres</button>
             <button class="botonDeOpcion botonLista" onclick="mostrarLista(licores)" id="licores">Licores</button>
-            <button class="botonDeOpcion botonLista" onclick="corregir()" id="corregir">Corregir</button>
+            <button class="botonDeOpcion botonLista" onclick="eliminarUltimaComanda()" id="corregir">Corregir</button>
+        </div>
+        <div id="comandas">
+            <ul id="listaComandas">
+            </ul>
         </div>
         <div id="listas">
             <div id="listaBebidas" class="lista" >
-                <button class="botonDeOpcion" >Agua</button>
-                <button class="botonDeOpcion" >Agua con gas</button>
-                <button class="botonDeOpcion" >Barril</button>
-                <button class="botonDeOpcion" >Cerveza SIN</button>
-                <button class="botonDeOpcion" >1906</button>
-                <button class="botonDeOpcion" >Estrella Sin Gluten</button>
-                <button class="botonDeOpcion" >Clara con Limon</button>
-                <button class="botonDeOpcion" >Clara Limon SIN</button>
-                <button class="botonDeOpcion" >Clara con Gaseosa</button>
-                <button class="botonDeOpcion" >Clara con Gaseosa SIN</button>
-                <button class="botonDeOpcion" >Tinto Verano Limon</button>
-                <button class="botonDeOpcion" >Tinto Verano Gaseosa</button>
-                <button class="botonDeOpcion" >CocaCola</button>
-                <button class="botonDeOpcion" >CocaCola Zero</button>
-                <button class="botonDeOpcion" >CocaCola Light</button>
-                <button class="botonDeOpcion" >CocaCola Zero Zero</button>
-                <button class="botonDeOpcion" >Fanta Limon</button>
-                <button class="botonDeOpcion" >Fanta Naranja</button>
-                <button class="botonDeOpcion" >Aquarius Limon</button>
-                <button class="botonDeOpcion" >Aquarius Naranja</button>
-                <button class="botonDeOpcion" >Sprite</button>
-                <button class="botonDeOpcion" >Nestea</button>
-                <button class="botonDeOpcion" >Mosto</button>
-                <button class="botonDeOpcion" >Tonica</button>
-                <button class="botonDeOpcion" >Zumo Melocoton</button>
-                <button class="botonDeOpcion" >Zumo Naranja</button>
-                <button class="botonDeOpcion" >Zumo Tomate</button>
-                <button class="botonDeOpcion" >Zumo Piña</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(b1)" id="b1">Agua</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(b2)" id="b2">Agua con gas</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(b3)" id="b3">Barril</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(b4)" id="b4">Cerveza SIN</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(b5)" id="b5">1906</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(b6)" id="b6">Estrella Sin Gluten</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(b7)" id="b7">Clara con Limon</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(b8)" id="b8">Clara Limon SIN</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(b9)" id="b9">Clara con Gaseosa</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(b10)" id="b10">Clara con Gaseosa SIN</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(b11)" id="b11">Tinto Verano Limon</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(b12)" id="b12">Tinto Verano Gaseosa</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(b13)" id="b13">CocaCola</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(b14)" id="b14">CocaCola Zero</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(b15)" id="b15">CocaCola Light</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(b16)" id="b16">CocaCola Zero Zero</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(b17)" id="b17">Fanta Limon</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(b18)" id="b18">Fanta Naranja</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(b19)" id="b19">Aquarius Limon</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(b20)" id="b20">Aquarius Naranja</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(b21)" id="b21">Sprite</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(b22)" id="b22">Nestea</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(b23)" id="b23">Mosto</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(b24)" id="b24">Tonica</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(b25)" id="b25">Zumo Melocoton</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(b26)" id="b26">Zumo Naranja</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(b27)" id="b27">Zumo Tomate</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(b28)" id="b28">Zumo Piña</button>
             </div>
             <div id="listaEntrantes" class="lista">
-                <button class="botonDeOpcion">Alitas Brasas</button>
-                <button class="botonDeOpcion">Chorizo Criollo</button>
-                <button class="botonDeOpcion">Nachos</button>
-                <button class="botonDeOpcion">Patatas 4 Quesos</button>
-                <button class="botonDeOpcion">Quesadilla Pollo</button>
-                <button class="botonDeOpcion">Quesadilla Chorizo</button>
-                <button class="botonDeOpcion">Tiras de Pollo</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(e1)" id="e1">Alitas Brasas</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(e2)" id="e2">Chorizo Criollo</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(e3)" id="e3">Nachos</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(e4)" id="e4">Patatas 4 Quesos</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(e5)" id="e5">Quesadilla Pollo</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(e6)" id="e6">Quesadilla Chorizo</button>
+                <button class="botonDeOpcion" onclick="añadirComanda(e7)" id="e7">Tiras de Pollo</button>
             </div>
             <div id="listaHamburguesas" class="lista">
-                <button class="botonDeOpcion">Alabama Pullpork</button>
-                <button class="botonDeOpcion">Bacon Lover</button>
-                <button class="botonDeOpcion">Californiana</button>
-                <button class="botonDeOpcion">Chesse Extreme</button>
-                <button class="botonDeOpcion">Cheese Polled Pork</button>
-                <button class="botonDeOpcion">Clasica</button>
-                <button class="botonDeOpcion">Gallega</button>
-                <button class="botonDeOpcion">Le Coq</button>
-                <button class="botonDeOpcion">Le Burgerie</button>
-                <button class="botonDeOpcion">Mexicana</button>
+                <button class="botonDeOpcion" onclick="añadirComanda()">Alabama Pullpork</button>
+                <button class="botonDeOpcion" onclick="añadirComanda()">Bacon Lover</button>
+                <button class="botonDeOpcion" onclick="añadirComanda()">Californiana</button>
+                <button class="botonDeOpcion" onclick="añadirComanda()">Chesse Extreme</button>
+                <button class="botonDeOpcion" onclick="añadirComanda()">Cheese Polled Pork</button>
+                <button class="botonDeOpcion" onclick="añadirComanda()">Clasica</button>
+                <button class="botonDeOpcion" onclick="añadirComanda()">Gallega</button>
+                <button class="botonDeOpcion" onclick="añadirComanda()">Le Coq</button>
+                <button class="botonDeOpcion" onclick="añadirComanda()">Le Burgerie</button>
+                <button class="botonDeOpcion" onclick="añadirComanda()">Mexicana</button>
             </div>
         </div>
     </body>
