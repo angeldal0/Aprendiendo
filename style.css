@@ -66,6 +66,34 @@ body {
 }
 
 /*****************************************************************
+********************** barra modificadores ***********************
+******************************************************************/
+
+#modificador {
+    position: absolute;
+    width: 970px;
+    height: 50px;
+    line-height: 50px;
+    bottom: 0;
+}
+
+#barraModificador {
+    background-color: burlywood;
+    margin: 0;
+}
+
+#input1 {
+    margin-left: 150px;
+    width: 500px;
+    text-align: center;
+}
+
+#input2 {
+    width: 70px;
+    height: 24px;
+}
+
+/*****************************************************************
 ********************** Colores de Botones ************************
 ******************************************************************/
 
