@@ -65,18 +65,29 @@
                 <button class="botonDeOpcion green" onclick="añadirComanda(e9)" id="e9">Ensalada Queso Cabra</button>
             </div>
             <div id="listaHamburguesas" class="lista">
-                <button class="botonDeOpcion lightblue" onclick="añadirComanda(h1)" id="h1">Alabama Pullpork</button>
-                <button class="botonDeOpcion lightblue" onclick="añadirComanda(h2)" id="h2">Bacon Lover</button>
-                <button class="botonDeOpcion lightblue" onclick="añadirComanda(h3)" id="h3">Californiana</button>
-                <button class="botonDeOpcion lightblue" onclick="añadirComanda(h4)" id="h4">Chesse Extreme</button>
-                <button class="botonDeOpcion green" onclick="añadirComanda(h5)" id="h5">Cheese Polled Pork</button>
-                <button class="botonDeOpcion lightblue" onclick="añadirComanda(h6)" id="h6">Clasica</button>
-                <button class="botonDeOpcion lightblue" onclick="añadirComanda(h7)" id="h7">Gallega</button>
-                <button class="botonDeOpcion red" onclick="añadirComanda(h8)" id="h8">Le Coq</button>
-                <button class="botonDeOpcion lightblue" onclick="añadirComanda(h9)" id="h9">Le Burgerie</button>
-                <button class="botonDeOpcion lightblue" onclick="añadirComanda(h10)" id="h10">Mexicana</button>
-                <button class="botonDeOpcion lightblue" onclick="añadirComanda(h11)" id="h11">Satisfaction</button>
-                <button class="botonDeOpcion pink" onclick="añadirComanda(h12)" id="h12">Trufada</button>
+                <button class="botonDeOpcion lightblue" onclick="añadirComanda(h1), mostrarListaV2();" id="h1">Alabama Pullpork</button>
+                <button class="botonDeOpcion lightblue" onclick="añadirComanda(h2), mostrarListaV2();" id="h2">Bacon Lover</button>
+                <button class="botonDeOpcion lightblue" onclick="añadirComanda(h3), mostrarListaV2();" id="h3">Californiana</button>
+                <button class="botonDeOpcion lightblue" onclick="añadirComanda(h4), mostrarListaV2();" id="h4">Chesse Extreme</button>
+                <button class="botonDeOpcion green" onclick="añadirComanda(h5), mostrarListaV2();" id="h5">Chesse Extreme</button>
+                <button class="botonDeOpcion lightblue" onclick="añadirComanda(h6), mostrarListaV2();" id="h6">Clasica</button>
+                <button class="botonDeOpcion lightblue" onclick="añadirComanda(h7), mostrarListaV2();" id="h7">Gallega</button>
+                <button class="botonDeOpcion red" onclick="añadirComanda(h8);" id="h8">Le Coq</button>
+                <button class="botonDeOpcion lightblue" onclick="añadirComanda(h9), mostrarListaV2();" id="h9">Le Burgerie</button>
+                <button class="botonDeOpcion lightblue" onclick="añadirComanda(h10), mostrarListaV2();" id="h10">Mexicana</button>
+                <button class="botonDeOpcion lightblue" onclick="añadirComanda(h11), mostrarListaV2();" id="h11">Satisfaction</button>
+                <button class="botonDeOpcion pink" onclick="añadirComanda(h12), mostrarListaV2();" id="h12">Trufada</button>
+            </div>
+            <div id="editorHamburguesas" class="lista">
+                <button id="eha1" class="botonDeOpcion green" onclick="modificarHamburguesa(eha1), mostrarListaV3()">Poco hecha</button>
+                <button id="eha2" class="botonDeOpcion green" onclick="modificarHamburguesa(eha2), mostrarListaV3()">Al punto</button>
+                <button id="eha3" class="botonDeOpcion green" onclick="modificarHamburguesa(eha3), mostrarListaV3()">Muy hecha</button>
+            </div>
+            <div id="editorHamburguesasV2" class="lista">
+                <button id="ehb1" class="botonDeOpcion lightblue" onclick="modificarHamburguesa(ehb1)">Patatas Clasicas</button>
+                <button id="ehb2" class="botonDeOpcion lightblue" onclick="modificarHamburguesa(ehb2)">Patatas Cajun</button>
+                <button id="ehb3" class="botonDeOpcion lightblue" onclick="modificarHamburguesa(ehb3)">Ensalada de Col</button>
+                <button id="ehb4" class="botonDeOpcion lightblue" onclick="modificarHamburguesa(ehb4)">Patatas Asadas</button>
             </div>
             <div id="listaCafe" class="lista">
                 <button class="botonDeOpcion brown" onclick="añadirComanda(c1)" id="c1">Cafe Solo</button>
