@@ -23,6 +23,11 @@ function mostrarLista(lista){
             var listaHamburguesas = document.getElementById("listaHamburguesas").style.display = "block";
             ultimaLista = "listaHamburguesas";
             break;
+        case "EditorHamburguesas":
+            ocultarAnterior(ultimaLista);
+            var listaHamburguesas = document.getElementById("editorHamburguesas").style.display = "block";
+            ultimaLista = "editorHamburguesas";
+            break;
         case "Cafe":
             ocultarAnterior(ultimaLista);
             var listaHamburguesas = document.getElementById("listaCafe").style.display = "block";
@@ -39,11 +44,27 @@ function mostrarLista(lista){
             ultimaLista = "listaLicores";
             break;
         case "Vinos":
-        ocultarAnterior(ultimaLista);
-        var listaHamburguesas = document.getElementById("listaVinos").style.display = "block";
-        ultimaLista = "listaVinos";
-        break;
+            ocultarAnterior(ultimaLista);
+            var listaHamburguesas = document.getElementById("listaVinos").style.display = "block";
+            ultimaLista = "listaVinos";
+            break;
     }
+}
+
+function mostrarListaV2() {
+    ocultarComanda();
+    ocultarBarraModificador();
+    ocultarAnterior(ultimaLista);
+    var listaEditHamburguesas = document.getElementById("editorHamburguesas").style.display = "block";
+    ultimaLista = "editorHamburguesas"
+}
+
+function mostrarListaV3() {
+    ocultarComanda();
+    ocultarBarraModificador();
+    ocultarAnterior(ultimaLista);
+    var listaEditHamburguesasV2 = document.getElementById("editorHamburguesasV2").style.display = "block";
+    ultimaLista = "editorHamburguesasV2"
 }
 
 function ocultarAnterior(){
@@ -104,6 +125,11 @@ function renovarComanda(nuevaComanda){
 function modificar(comentario){
     var edit = document.createElement("p");
     edit.innerHTML = ultimaComanda.innerHTML + '\n - ' + comentario.value;
-    console.log(edit.innerHTML);
+    renovarComanda(edit);
+}
+
+function modificarHamburguesa(opcion){
+    var edit = document.createElement("p");
+    edit.innerHTML = ultimaComanda.innerHTML + '\n - ' + opcion.innerHTML;
     renovarComanda(edit);
 }
