@@ -43,15 +43,7 @@ body {
     max-width: 710px;
 }
 
-#listaBebidas {
-    display: none;
-}
-
-#listaEntrantes {
-    display: none;
-}
-
-#listaHamburguesas {
+#listaEntrantes, #listaHamburguesas, #listaBebidas, #listaCafe, #listaLicores, #listaPostres {
     display: none;
 }
 
