@@ -75,6 +75,14 @@ function mostrarListaV4(){
     ultimaLista = "editorLicores"
 }
 
+function mostrarListaV5(){
+    ocultarComanda();
+    ocultarBarraModificador();
+    ocultarAnterior(ultimaLista);
+    document.getElementById("editorVinos").style.display = "block";
+    ultimaLista = "editorVinos"
+}
+
 function ocultarAnterior(){
     var x = document.getElementById(ultimaLista);
     x.style.display = "none";
