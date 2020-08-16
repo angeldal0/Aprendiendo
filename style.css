@@ -47,7 +47,7 @@ body {
     max-width: 710px;
 }
 
-#listaBebidas, #listaEntrantes, #listaHamburguesas, #listaCafe, #listaLicores, #listaPostres, #listaVinos, #editorHamburguesas, #editorHamburguesasV2, #editorLicores {
+#listaBebidas, #listaEntrantes, #listaHamburguesas, #listaCafe, #listaLicores, #listaPostres, #listaVinos, #editorHamburguesas, #editorHamburguesasV2, #editorLicores, #editorVinos {
     display: none;
 }
 
