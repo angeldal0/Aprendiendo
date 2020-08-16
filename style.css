@@ -47,7 +47,7 @@ body {
     max-width: 710px;
 }
 
-#listaEntrantes, #listaHamburguesas, #listaBebidas, #listaCafe, #listaLicores, #listaPostres, #listaVinos {
+#listaBebidas, #listaEntrantes, #listaHamburguesas, #listaCafe, #listaLicores, #listaPostres, #listaVinos {
     display: none;
 }
 
@@ -72,25 +72,34 @@ body {
 #modificador {
     position: fixed;
     width: 970px;
-    height: 50px;
-    line-height: 50px;
+    height: 150px;
+    line-height: 150px;
     bottom: 0;
+    display: block;
+    clear: both;
+
 }
 
 #barraModificador {
     background-color: burlywood;
-    margin: 0;
+ 
+
+    
 }
 
 #input1 {
     margin-left: 150px;
     width: 500px;
     text-align: center;
+    height: 100px;
+    line-height: 100px;
 }
 
 #input2 {
     width: 70px;
-    height: 24px;
+    height: 107px;
+    padding-bottom: 22px;
+    font-size: 40px;
 }
 
 /*****************************************************************
