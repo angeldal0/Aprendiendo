@@ -10,42 +10,42 @@ function mostrarLista(lista){
     switch (lista.innerHTML){
         case "Bebidas":
             ocultarAnterior(ultimaLista);
-            var listaBebidas = document.getElementById("listaBebidas").style.display = "block";
+            document.getElementById("listaBebidas").style.display = "block";
             ultimaLista = "listaBebidas";
             break;
         case "Entrantes":
             ocultarAnterior(ultimaLista);
-            var listaEntrantes = document.getElementById("listaEntrantes").style.display = "block";
+            document.getElementById("listaEntrantes").style.display = "block";
             ultimaLista = "listaEntrantes";
             break;
         case "Hamburguesas":
             ocultarAnterior(ultimaLista);
-            var listaHamburguesas = document.getElementById("listaHamburguesas").style.display = "block";
+            document.getElementById("listaHamburguesas").style.display = "block";
             ultimaLista = "listaHamburguesas";
             break;
         case "EditorHamburguesas":
             ocultarAnterior(ultimaLista);
-            var listaHamburguesas = document.getElementById("editorHamburguesas").style.display = "block";
+            document.getElementById("editorHamburguesas").style.display = "block";
             ultimaLista = "editorHamburguesas";
             break;
         case "Cafe":
             ocultarAnterior(ultimaLista);
-            var listaHamburguesas = document.getElementById("listaCafe").style.display = "block";
+            document.getElementById("listaCafe").style.display = "block";
             ultimaLista = "listaCafe";
             break;
         case "Postres":
             ocultarAnterior(ultimaLista);
-            var listaHamburguesas = document.getElementById("listaPostres").style.display = "block";
+            document.getElementById("listaPostres").style.display = "block";
             ultimaLista = "listaPostres";
             break;
         case "Licores":
             ocultarAnterior(ultimaLista);
-            var listaHamburguesas = document.getElementById("listaLicores").style.display = "block";
+            document.getElementById("listaLicores").style.display = "block";
             ultimaLista = "listaLicores";
             break;
         case "Vinos":
             ocultarAnterior(ultimaLista);
-            var listaHamburguesas = document.getElementById("listaVinos").style.display = "block";
+            document.getElementById("listaVinos").style.display = "block";
             ultimaLista = "listaVinos";
             break;
     }
@@ -55,7 +55,7 @@ function mostrarListaV2() {
     ocultarComanda();
     ocultarBarraModificador();
     ocultarAnterior(ultimaLista);
-    var listaEditHamburguesas = document.getElementById("editorHamburguesas").style.display = "block";
+    document.getElementById("editorHamburguesas").style.display = "block";
     ultimaLista = "editorHamburguesas"
 }
 
@@ -63,8 +63,16 @@ function mostrarListaV3() {
     ocultarComanda();
     ocultarBarraModificador();
     ocultarAnterior(ultimaLista);
-    var listaEditHamburguesasV2 = document.getElementById("editorHamburguesasV2").style.display = "block";
+    document.getElementById("editorHamburguesasV2").style.display = "block";
     ultimaLista = "editorHamburguesasV2"
+}
+
+function mostrarListaV4(){
+    ocultarComanda();
+    ocultarBarraModificador();
+    ocultarAnterior(ultimaLista);
+    document.getElementById("editorLicores").style.display = "block";
+    ultimaLista = "editorLicores"
 }
 
 function ocultarAnterior(){
