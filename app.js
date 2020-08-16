@@ -37,6 +37,11 @@ function mostrarLista(lista){
             var listaHamburguesas = document.getElementById("listaLicores").style.display = "block";
             ultimaLista = "listaLicores";
             break;
+        case "Vinos":
+        ocultarAnterior(ultimaLista);
+        var listaHamburguesas = document.getElementById("listaVinos").style.display = "block";
+        ultimaLista = "listaVinos";
+        break;
     }
 }
 
