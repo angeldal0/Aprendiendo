@@ -47,7 +47,7 @@ body {
     max-width: 710px;
 }
 
-#listaBebidas, #listaEntrantes, #listaHamburguesas, #listaCafe, #listaLicores, #listaPostres, #listaVinos, #editorHamburguesas, #editorHamburguesasV2 {
+#listaBebidas, #listaEntrantes, #listaHamburguesas, #listaCafe, #listaLicores, #listaPostres, #listaVinos, #editorHamburguesas, #editorHamburguesasV2, #editorLicores {
     display: none;
 }
 
@@ -160,6 +160,11 @@ body {
 
 .botonCafe {
     background-color: rgb(3, 97, 97);
+    color: white;
+}
+
+.lightpink {
+    background-color: lightcoral;
     color: white;
 }
 
