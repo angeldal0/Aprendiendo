@@ -6,6 +6,7 @@ var ultimaLista = "listaEntrantes";
 
 function mostrarLista(lista){
     ocultarComanda();
+    ocultarBarraModificador();
     switch (lista.innerHTML){
         case "Bebidas":
             ocultarAnterior(ultimaLista);
