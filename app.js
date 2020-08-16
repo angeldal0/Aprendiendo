@@ -135,7 +135,6 @@ function mostrarBarraModificador(){
 function renovarComanda(nuevaComanda){
     eliminarUltimaComanda();
     añadirComanda(nuevaComanda);
-    console.log("w");
 }
 
 function modificar(comentario){
