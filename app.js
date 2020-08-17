@@ -161,6 +161,7 @@ function modificarHamburguesa(opcion){
     edit.innerHTML = ultimaComanda.innerHTML + '\n - ' + opcion.innerHTML;
     renovarComanda(edit);
     ocultarAnterior(ultimaLista);
+    mostrarBarraModificador();
 }
 
 function modificarHamburguesaV2(opcion, lista){
@@ -170,6 +171,7 @@ function modificarHamburguesaV2(opcion, lista){
     ocultarAnterior(ultimaLista);
     ultimaLista = "editorHamburguesasV2"
     mostrarLista(lista);
+    mostrarBarraModificador();
 }
 
 function modificarLicores(opcion, lista){
@@ -179,6 +181,7 @@ function modificarLicores(opcion, lista){
     ocultarAnterior(ultimaLista);
     ultimaLista = "editorLicores"
     mostrarLista(lista);
+    mostrarBarraModificador();
 }
 
 function modificarVinos(opcion, lista){
@@ -188,4 +191,5 @@ function modificarVinos(opcion, lista){
     ocultarAnterior(ultimaLista);
     ultimaLista = "editorVinos"
     mostrarLista(lista);
+    mostrarBarraModificador();
 }
