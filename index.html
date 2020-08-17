@@ -17,11 +17,11 @@
             <button class="botonDeOpcion botonLista darkred" onclick="mostrarLista(vinos)" id="vinos">Vinos</button>
             <button class="botonDeOpcion botonLista purple" onclick="mostrarLista(licores)" id="licores">Licores</button>
             <button class="botonDeOpcion botonLista corregir" onclick="eliminarUltimaComanda()" id="corregir">Corregir</button>
-        </div>
+        </div> <!-- listaOpciones -->
         <div id="comandas">
             <ul id="listaComandas">
             </ul>
-        </div>
+        </div> <!-- listaComandas -->
         <div id="listas">
             <div id="listaBebidas" class="lista" >
                 <button class="botonDeOpcion blue" onclick="añadirComanda(b1)" id="b1">Agua</button>
@@ -52,7 +52,7 @@
                 <button class="botonDeOpcion red" onclick="añadirComanda(b26)" id="b26">Zumo Naranja</button>
                 <button class="botonDeOpcion red" onclick="añadirComanda(b27)" id="b27">Zumo Tomate</button>
                 <button class="botonDeOpcion red" onclick="añadirComanda(b28)" id="b28">Zumo Piña</button>
-            </div>
+            </div> <!-- listaBebidas -->
             <div id="listaEntrantes" class="lista">
                 <button class="botonDeOpcion purple" onclick="añadirComanda(e1)" id="e1">Alitas Brasas</button>
                 <button class="botonDeOpcion pink" onclick="añadirComanda(e2)" id="e2">Chorizo Criollo</button>
@@ -63,7 +63,7 @@
                 <button class="botonDeOpcion purple" onclick="añadirComanda(e7)" id="e7">Tiras de Pollo</button>
                 <button class="botonDeOpcion green" onclick="añadirComanda(e8)" id="e8">Ensalada Cesar</button>
                 <button class="botonDeOpcion green" onclick="añadirComanda(e9)" id="e9">Ensalada Queso Cabra</button>
-            </div>
+            </div> <!-- listaEntrantes -->
             <div id="listaHamburguesas" class="lista">
                 <button class="botonDeOpcion lightblue" onclick="añadirComanda(h1), mostrarListaV2()" id="h1">Alabama Pullpork</button>
                 <button class="botonDeOpcion lightblue" onclick="añadirComanda(h2), mostrarListaV2()" id="h2">Bacon Lover</button>
@@ -77,18 +77,18 @@
                 <button class="botonDeOpcion lightblue" onclick="añadirComanda(h10), mostrarListaV2()" id="h10">Mexicana</button>
                 <button class="botonDeOpcion lightblue" onclick="añadirComanda(h11), mostrarListaV2()" id="h11">Satisfaction</button>
                 <button class="botonDeOpcion pink" onclick="añadirComanda(h12), mostrarListaV2()" id="h12">Trufada</button>
-            </div>
+            </div> <!-- listaHamburguesas -->
             <div id="editorHamburguesas" class="lista">
                 <button id="eha1" class="botonDeOpcion green" onclick="modificarHamburguesa(eha1), mostrarListaV3()">Poco hecha</button>
                 <button id="eha2" class="botonDeOpcion green" onclick="modificarHamburguesa(eha2), mostrarListaV3()">Al punto</button>
                 <button id="eha3" class="botonDeOpcion green" onclick="modificarHamburguesa(eha3), mostrarListaV3()">Muy hecha</button>
-            </div>
+            </div> <!-- editorHamburguesas -->
             <div id="editorHamburguesasV2" class="lista">
-                <button id="ehb1" class="botonDeOpcion lightblue" onclick="modificarHamburguesa(ehb1)">Patatas Clasicas</button>
-                <button id="ehb2" class="botonDeOpcion lightblue" onclick="modificarHamburguesa(ehb2)">Patatas Cajun</button>
-                <button id="ehb3" class="botonDeOpcion lightblue" onclick="modificarHamburguesa(ehb3)">Ensalada de Col</button>
-                <button id="ehb4" class="botonDeOpcion lightblue" onclick="modificarHamburguesa(ehb4)">Patatas Asadas</button>
-            </div>
+                <button id="ehb1" class="botonDeOpcion lightblue" onclick="modificarHamburguesaV2(ehb1, hamburguesas)">Patatas Clasicas</button>
+                <button id="ehb2" class="botonDeOpcion lightblue" onclick="modificarHamburguesaV2(ehb2, hamburguesas)">Patatas Cajun</button>
+                <button id="ehb3" class="botonDeOpcion lightblue" onclick="modificarHamburguesaV2(ehb3, hamburguesas)">Ensalada de Col</button>
+                <button id="ehb4" class="botonDeOpcion lightblue" onclick="modificarHamburguesaV2(ehb4, hamburguesas)">Patatas Asadas</button>
+            </div> <!-- editorHamburguesasV2 -->
             <div id="listaCafe" class="lista">
                 <button class="botonDeOpcion brown" onclick="añadirComanda(c1)" id="c1">Cafe Solo</button>
                 <button class="botonDeOpcion brown" onclick="añadirComanda(c2)" id="c2">Cafe Italiano</button>
@@ -110,7 +110,7 @@
                 <button class="botonDeOpcion brown" onclick="añadirComanda(c18)" id="c18">Te Negro</button>
                 <button class="botonDeOpcion brown" onclick="añadirComanda(c19)" id="c19">Nesquik</button>
                 <button class="botonDeOpcion brown" onclick="añadirComanda(c20)" id="c20">Carajillo</button>
-            </div>
+            </div> <!-- listaCafe -->
             <div id="listaPostres" class="lista">
                 <button class="botonDeOpcion red" onclick="añadirComanda(p1)" id="p1">Brownie</button>
                 <button class="botonDeOpcion red" onclick="añadirComanda(p2)" id="p2">Carrotcake</button>
@@ -118,7 +118,7 @@
                 <button class="botonDeOpcion red" onclick="añadirComanda(p4)" id="p4">Cookie con Helado</button>
                 <button class="botonDeOpcion red" onclick="añadirComanda(p5)" id="p5">Helado Dulce Leche</button>
                 <button class="botonDeOpcion red" onclick="añadirComanda(p6)" id="p6">Helado Vainilla</button>
-            </div>
+            </div> <!-- listaPostres -->
             <div id="listaVinos" class="lista">
                 <button class="botonDeOpcion yellow" onclick="añadirComanda(v1), mostrarListaV5()" id="v1">Loco Finca (Rueda)</button>
                 <button class="botonDeOpcion yellow" onclick="añadirComanda(v2), mostrarListaV5()" id="v2">Mytilus (Alvariño)</button>
@@ -128,11 +128,11 @@
                 <button class="botonDeOpcion darkred" onclick="añadirComanda(v6), mostrarListaV5()" id="v6">Legaris (Ribera)</button>
                 <button class="botonDeOpcion darkred" onclick="añadirComanda(v7), mostrarListaV5()" id="v7">Luis Cañas (Rioja)</button>
                 <button class="botonDeOpcion darkred" onclick="añadirComanda(v8), mostrarListaV5()" id="v8">Retamas (Madrid)</button>
-            </div>
+            </div> <!-- listaVinos -->
             <div id="editorVinos" class="lista">
-                <button id="ev1" class="botonDeOpcion darkred" onclick="modificarHamburguesa(ev1)">Copa</button>
-                <button id="ev2" class="botonDeOpcion darkred" onclick="modificarHamburguesa(ev2)">Botella</button>
-            </div>
+                <button id="ev1" class="botonDeOpcion darkred" onclick="modificarVinos(ev1, vinos)">Copa</button>
+                <button id="ev2" class="botonDeOpcion darkred" onclick="modificarVinos(ev2, vinos)">Botella</button>
+            </div> <!-- editorVinos -->
             <div id="listaLicores" class="lista">
                 <button class="botonDeOpcion lightpink" onclick="añadirComanda(l1), mostrarListaV4()" id="l1">Absolut</button>
                 <button class="botonDeOpcion lightpink" onclick="añadirComanda(l2), mostrarListaV4()" id="l2">Barcelo</button>
@@ -141,25 +141,25 @@
                 <button class="botonDeOpcion lightpink" onclick="añadirComanda(l3), mostrarListaV4()" id="l3">Brugal</button>
                 <button class="botonDeOpcion lightpink" onclick="añadirComanda(l7), mostrarListaV4()" id="l7">Bulldog</button>
                 <button class="botonDeOpcion lightpink" onclick="añadirComanda(l4), mostrarListaV4()" id="l4">Gjvine</button>
-                <button class="botonDeOpcion lightpink" onclick="añadirComanda(l6, mostrarListaV4())" id="l6">Nordes</button>
+                <button class="botonDeOpcion lightpink" onclick="añadirComanda(l6), mostrarListaV4()" id="l6">Nordes</button>
                 <button class="botonDeOpcion lightpink" onclick="añadirComanda(l5), mostrarListaV4()" id="l5">Puerto de Indias</button>
-            </div>
+            </div> <!-- listaLicores -->
             <div id="editorLicores" class="lista">
-                <button id="el1" class="botonDeOpcion blue" onclick="modificarHamburguesa(el1)">Agua</button>
-                <button id="el2" class="botonDeOpcion blue" onclick="modificarHamburguesa(el2)">Agua con Gas</button>
-                <button id="el3" class="botonDeOpcion blue" onclick="modificarHamburguesa(el3)">Tonica</button>
-                <button id="el4" class="botonDeOpcion red" onclick="modificarHamburguesa(el4)">CocaCola</button>
-                <button id="el5" class="botonDeOpcion black" onclick="modificarHamburguesa(el5)">CocaCola Zero</button>
-                <button id="el6" class="botonDeOpcion purple" onclick="modificarHamburguesa(el6)">CocaCola Zero Zero</button>
-                <button id="el7" class="botonDeOpcion brown" onclick="modificarHamburguesa(el7)">CocaCola Light</button>
-                <button id="el8" class="botonDeOpcion yellow" onclick="modificarHamburguesa(el8)">Fanta Limon</button>
-                <button id="el9" class="botonDeOpcion red" onclick="modificarHamburguesa(el9)">Fanta Naranja</button>
-                <button id="el10" class="botonDeOpcion green" onclick="modificarHamburguesa(el10)">Sprite</button>
-            </div>
-        </div>
+                <button id="el1" class="botonDeOpcion blue" onclick="modificarLicores(el1, licores)">Agua</button>
+                <button id="el2" class="botonDeOpcion blue" onclick="modificarLicores(el2, licores)">Agua con Gas</button>
+                <button id="el3" class="botonDeOpcion blue" onclick="modificarLicores(el3, licores)">Tonica</button>
+                <button id="el4" class="botonDeOpcion red" onclick="modificarLicores(el4, licores)">CocaCola</button>
+                <button id="el5" class="botonDeOpcion black" onclick="modificarLicores(el5, licores)">CocaCola Zero</button>
+                <button id="el6" class="botonDeOpcion purple" onclick="modificarLicores(el6, licores)">CocaCola Zero Zero</button>
+                <button id="el7" class="botonDeOpcion brown" onclick="modificarLicores(el7, licores)">CocaCola Light</button>
+                <button id="el8" class="botonDeOpcion yellow" onclick="modificarLicores(el8, licores)">Fanta Limon</button>
+                <button id="el9" class="botonDeOpcion red" onclick="modificarLicores(el9, licores)">Fanta Naranja</button>
+                <button id="el10" class="botonDeOpcion green" onclick="modificarLicores(el10, licores)">Sprite</button>
+            </div> <!-- editorLicores -->
+        </div> <!-- listas -->
         <div id="modificador">
             <p id="barraModificador"><input id="input1" type="text" placeholder="Comentario Libre"><button onclick="modificar(input1)" id="input2">^</button></p>
-        </div>
+        </div> <!-- modificador -->
     </body>
     <script src="app.js"></script>
 </html>
